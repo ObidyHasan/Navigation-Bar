@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="brand">Brand</a>
+
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="section-main">
+      <h1>Sticky Navigation Bar</h1>
+    </section>
+
+    <section class="two-section">
+      <h2>Protect Rainforests</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
+        cumque recusandae iure hic iusto non amet temporibus suscipit. Maxime
+        quibusdam accusamus fugiat odit at cum odio magnam aperiam veritatis
+        deleniti ea itaque ad saepe a quo molestiae natus eveniet nulla
+        explicabo deserunt, atque dicta ipsa eligendi. Cupiditate exercitationem
+        consequuntur enim. Ab officia sapiente, est dicta aliquid fugiat
+        temporibus minima suscipit fuga sit rem repellat omnis. Facere rerum
+        reprehenderit nemo adipisci repudiandae esse dolore totam incidunt,
+        voluptatem ut doloremque, optio inventore voluptates voluptas alias
+        exercitationem, cupiditate aliquam assumenda? Ullam quia omnis ipsum
+        nobis maxime delectus facere eligendi magnam consequatur ab!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, magni.
+        At expedita ad quia error quod sunt consectetur impedit molestiae quidem
+        dolore dignissimos rem provident nam similique corporis, sed quo facilis
+        natus totam temporibus eveniet iste culpa cumque ducimus. Aperiam beatae
+        distinctio magnam facere dolor eaque iusto incidunt consectetur,
+        assumenda voluptates eligendi ut tempore, hic recusandae qui? Amet nulla
+        dicta ut nihil ex culpa, consequatur neque sed nemo non temporibus?
+        Perferendis omnis exercitationem magnam esse, id eaque dolore labore
+        aut, adipisci velit autem et reprehenderit minima. Fugit, eos beatae
+        alias vel voluptas aut asperiores necessitatibus quam vitae, aperiam,
+        excepturi iusto.
+      </p>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatem
+        officia ullam consequatur quam recusandae aut cumque veniam?
+        Repellendus, voluptas minima ducimus corporis maiores recusandae
+        consectetur molestias odio dolores porro dolor quod illo quia dolorem,
+        eos veniam! Facere, alias sed iste quod cum facilis rem illo
+        necessitatibus animi in quae quas autem perferendis recusandae delectus
+        corporis eligendi! Ipsam dolorem, ipsum delectus reiciendis optio
+        placeat modi possimus assumenda officiis amet officia quam cupiditate
+        perferendis. Voluptates officiis dolor fugit debitis repudiandae
+        tenetur!
+      </p>
+
+      <h2>Protext Nature</h2>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos beatae
+        fugit at itaque quas natus quo praesentium odit commodi repellendus
+        obcaecati officiis nisi nulla, nostrum sequi tempora? Nihil, temporibus
+        molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Minima voluptatibus alias tempora impedit iure necessitatibus temporibus
+        ullam velit maxime dolore, assumenda sequi nam harum tempore minus nulla
+        explicabo ea dicta.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        ipsa eius minus voluptas laborum ad repellendus. Aliquid provident quia
+        ipsum, amet rerum deserunt ullam temporibus aspernatur, soluta
+        distinctio enim. Odio mollitia voluptatum natus fuga aut voluptatem
+        exercitationem minima eum nostrum iste officiis accusantium cum, ipsa
+        quod quidem, quos nam soluta illum hic itaque. Reprehenderit similique
+        illum veniam. Illum doloribus ut quasi, quos nisi odit sit sapiente
+        magnam qui odio veniam rem. Quidem autem accusamus quas est amet
+        architecto quasi ut asperiores alias beatae culpa at quos assumenda
+        omnis, veritatis error itaque sequi quia excepturi! Beatae delectus sint
+        nobis sunt aut.
+      </p>
+    </section>
+
+    <script>
+      // javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      // javascript for responsive navigation sidebar menu
+      var menu = document.querySelector(".menu");
+      var menuBtn = document.querySelector(".menu-btn");
+      var closeBtn = document.querySelector(".close-btn");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
